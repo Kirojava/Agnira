@@ -1,10 +1,10 @@
 run = "tsx index.ts"
 entrypoint = "index.ts"
 hidden = [".config", "package-lock.json", "tsconfig.json"]
-modules = ["nodejs-20"]
+modules = ["nodejs-20", "web"]
 
 [nix]
-channel = "stable-24_05"
+channel = "stable-25_05"
 packages = ["unzip"]
 
 [gitHubImport]
@@ -26,6 +26,10 @@ externalPort = 80
 [[ports]]
 localPort = 5001
 externalPort = 3000
+
+[[ports]]
+localPort = 43581
+externalPort = 3002
 
 [[ports]]
 localPort = 45495

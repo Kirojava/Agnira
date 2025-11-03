@@ -52,12 +52,16 @@ const Navigation = ({ activeSection }: NavigationProps) => {
               onClick={() => scrollToSection('home')}
             >
               <div className="relative">
-                <div className="absolute inset-0 bg-[#FFD700]/20 blur-xl rounded-full" />
+                <div className="absolute inset-0 bg-[#FFD700]/30 blur-xl rounded-full scale-150" />
+                <div className="absolute inset-0 bg-[#8B0000]/30 blur-lg rounded-full" />
                 <img 
                   src="/images/agnira-logo-official.jpg" 
                   alt="Agnira MUN" 
-                  className="relative w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300 brightness-110 contrast-125"
-                  style={{ mixBlendMode: 'lighten' }}
+                  className="relative w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300 brightness-125 contrast-110 saturate-110"
+                  style={{ 
+                    mixBlendMode: 'screen',
+                    filter: 'drop-shadow(0 0 15px rgba(255, 215, 0, 0.4))'
+                  }}
                 />
               </div>
               <div>

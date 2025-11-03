@@ -17,12 +17,16 @@ const Hero = () => {
           <div className="inline-block">
             <div className="mb-8 flex justify-center">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-radial from-[#FFD700]/20 via-[#8B0000]/10 to-transparent blur-3xl" />
+                <div className="absolute inset-0 bg-gradient-radial from-[#FFD700]/30 via-[#8B0000]/20 to-transparent blur-3xl scale-150" />
+                <div className="absolute inset-0 bg-[#8B0000]/40 blur-2xl" />
                 <img 
                   src="/images/agnira-logo-official.jpg" 
                   alt="Agnira MUN Official Logo" 
-                  className="relative w-40 h-40 sm:w-48 sm:h-48 object-contain drop-shadow-2xl brightness-110 contrast-125"
-                  style={{ mixBlendMode: 'lighten' }}
+                  className="relative w-40 h-40 sm:w-48 sm:h-48 object-contain brightness-125 contrast-110 saturate-110"
+                  style={{ 
+                    mixBlendMode: 'screen',
+                    filter: 'drop-shadow(0 0 40px rgba(255, 215, 0, 0.5))'
+                  }}
                 />
               </div>
             </div>

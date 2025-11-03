@@ -1,13 +1,6 @@
 import { Calendar, MapPin, ArrowRight } from 'lucide-react';
 
 const Hero = () => {
-  const scrollToRegistration = () => {
-    const element = document.getElementById('registration');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0 bg-gradient-to-b from-[#8B0000]/20 via-transparent to-[#1a0a0f]" />
@@ -54,8 +47,10 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button
-            onClick={scrollToRegistration}
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSelrH23DN5qR4vf9hxyv3f-4sjnpg7gpq16FidZAXjXIKf-0Q/viewform?pli=1&fbclid=PAb21jcAN1bhZleHRuA2FlbQIxMQABp66gEM6DpLZSTshaifMz_auz481NLygnlJVxqiWSzAhMJla2-xdH3iZAYTeZ_aem_FCeU7BI0-5RIN1l_GYRVwA"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative px-10 py-5 bg-gradient-to-r from-[#8B0000] to-[#A52A2A] text-[#FFD700] text-xl font-bold rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-[#FFD700]/50 hover:scale-105 border-2 border-[#FFD700]/30"
           >
             <span className="relative z-10 flex items-center gap-2 tracking-wide">
@@ -63,7 +58,7 @@ const Hero = () => {
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-[#FFD700] to-[#FFA500] opacity-0 group-hover:opacity-20 transition-opacity" />
-          </button>
+          </a>
 
           <button
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}

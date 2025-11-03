@@ -151,7 +151,9 @@ const Registration = () => {
 
         <div className="text-center">
           <a
-            href="#"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSelrH23DN5qR4vf9hxyv3f-4sjnpg7gpq16FidZAXjXIKf-0Q/viewform?pli=1&fbclid=PAb21jcAN1bhZleHRuA2FlbQIxMQABp66gEM6DpLZSTshaifMz_auz481NLygnlJVxqiWSzAhMJla2-xdH3iZAYTeZ_aem_FCeU7BI0-5RIN1l_GYRVwA"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-12 py-6 bg-gradient-to-r from-[#8B0000] to-[#A52A2A] text-[#FFD700] text-2xl font-bold rounded-xl hover:shadow-2xl hover:shadow-[#FFD700]/50 hover:scale-105 transition-all duration-300 group border-2 border-[#FFD700]/30"
           >
             <span className="tracking-wide">REGISTER NOW!</span>

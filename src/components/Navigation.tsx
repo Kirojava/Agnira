@@ -51,18 +51,11 @@ const Navigation = ({ activeSection }: NavigationProps) => {
               className="flex items-center space-x-3 cursor-pointer group"
               onClick={() => scrollToSection('home')}
             >
-              <div className="relative">
-                <div className="absolute inset-0 bg-[#FFD700]/30 blur-xl rounded-full scale-150" />
-                <div className="absolute inset-0 bg-[#8B0000]/30 blur-lg rounded-full" />
-                <img 
-                  src="/images/agnira-logo.png" 
-                  alt="Agnira MUN" 
-                  className="relative w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300 opacity-90"
-                  style={{ 
-                    filter: 'drop-shadow(0 0 15px rgba(255, 215, 0, 0.5)) drop-shadow(0 0 8px rgba(139, 0, 0, 0.3))'
-                  }}
-                />
-              </div>
+              <img 
+                src="/images/agnira-logo.png" 
+                alt="Agnira MUN" 
+                className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
+              />
               <div>
                 <div className="text-2xl font-bold text-gradient">AGNIRA MUN</div>
                 <div className="text-xs text-[#FFD700]/70 tracking-wider">NOVEMBER 6-7, 2025</div>

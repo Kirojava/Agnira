@@ -16,13 +16,17 @@ const Hero = () => {
         <div className="mb-8 animate-fade-in">
           <div className="inline-block">
             <div className="mb-8 flex justify-center">
-              <img 
-                src="/images/agnira-logo.jpg" 
-                alt="Agnira MUN Logo" 
-                className="w-40 h-40 sm:w-48 sm:h-48 object-contain drop-shadow-2xl rounded-full"
-              />
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-radial from-[#FFD700]/20 via-[#8B0000]/10 to-transparent blur-3xl" />
+                <img 
+                  src="/images/agnira-logo-official.jpg" 
+                  alt="Agnira MUN Official Logo" 
+                  className="relative w-40 h-40 sm:w-48 sm:h-48 object-contain drop-shadow-2xl brightness-110 contrast-125"
+                  style={{ mixBlendMode: 'lighten' }}
+                />
+              </div>
             </div>
-            <div className="text-sm font-semibold tracking-widest text-[#FFD700] mb-4 uppercase">
+            <div className="text-sm font-semibold tracking-widest text-[#FFD700]/80 mb-4 uppercase" style={{ textShadow: '0 0 20px rgba(255, 215, 0, 0.3)' }}>
               Powered by Arsenic Branding
             </div>
             <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-4">

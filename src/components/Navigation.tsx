@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Flame } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 interface NavigationProps {
   activeSection: string;
@@ -52,8 +52,13 @@ const Navigation = ({ activeSection }: NavigationProps) => {
               onClick={() => scrollToSection('home')}
             >
               <div className="relative">
-                <Flame className="w-10 h-10 text-[#FFD700] group-hover:scale-110 transition-transform duration-300" />
-                <div className="absolute inset-0 bg-[#FFD700] blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
+                <div className="absolute inset-0 bg-[#FFD700]/20 blur-xl rounded-full" />
+                <img 
+                  src="/images/agnira-logo-official.jpg" 
+                  alt="Agnira MUN" 
+                  className="relative w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300 brightness-110 contrast-125"
+                  style={{ mixBlendMode: 'lighten' }}
+                />
               </div>
               <div>
                 <div className="text-2xl font-bold text-gradient">AGNIRA MUN</div>

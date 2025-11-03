@@ -1,30 +1,28 @@
-import { UNGALogo, UNCSWLogo, LokSabhaLogo, IPCLogo } from './CommitteeLogos';
-
 const Committees = () => {
   const committees = [
     {
-      icon: UNGALogo,
+      image: '/images/unga-logo.jpg',
       name: 'UNGA DISEC',
       fullName: 'United Nations General Assembly - Disarmament and International Security Committee',
       agenda: 'Regulating military use of AI to prevent conflict and uphold global security',
       color: 'from-[#8B0000] to-[#A52A2A]'
     },
     {
-      icon: UNCSWLogo,
+      image: '/images/uncsw-logo.jpg',
       name: 'UNCSW',
       fullName: 'United Nations Commission on the Status of Women',
       agenda: 'Combatting human trafficking and exploitation of women and girls',
       color: 'from-[#A52A2A] to-[#8B0000]'
     },
     {
-      icon: LokSabhaLogo,
+      image: '/images/loksabha-logo.jpg',
       name: 'LOK SABHA',
       fullName: 'Lok Sabha',
       agenda: 'Promoting jobs, vocational training, and entrepreneurship for inclusive economic growth',
       color: 'from-[#8B0000] to-[#6B0000]'
     },
     {
-      icon: IPCLogo,
+      image: '/images/ipc-logo.jpg',
       name: 'IPC',
       fullName: 'International Press Corps',
       agenda: 'Photographer, Caricaturist & Journalist',
@@ -49,7 +47,6 @@ const Committees = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {committees.map((committee, index) => {
-            const Icon = committee.icon;
             return (
               <div
                 key={index}
@@ -61,10 +58,15 @@ const Committees = () => {
                 <div className="relative p-8">
                   <div className="flex items-start gap-6 mb-6">
                     <div className="relative flex-shrink-0">
-                      <div className={`w-20 h-20 bg-gradient-to-br ${committee.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                        <Icon className="w-10 h-10 text-[#FFD700]" />
+                      <div className="absolute inset-0 bg-[#FFD700]/20 blur-2xl opacity-20 group-hover:opacity-40 transition-opacity" />
+                      <div className="relative w-24 h-24 rounded-2xl overflow-hidden group-hover:scale-110 transition-transform duration-300 border border-[#FFD700]/20">
+                        <img 
+                          src={committee.image} 
+                          alt={committee.name}
+                          className="w-full h-full object-cover brightness-110 contrast-125"
+                          style={{ mixBlendMode: 'lighten' }}
+                        />
                       </div>
-                      <div className="absolute inset-0 bg-[#FFD700] blur-2xl opacity-20 group-hover:opacity-40 transition-opacity" />
                     </div>
 
                     <div className="flex-1">

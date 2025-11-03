@@ -55,12 +55,11 @@ const Navigation = ({ activeSection }: NavigationProps) => {
                 <div className="absolute inset-0 bg-[#FFD700]/30 blur-xl rounded-full scale-150" />
                 <div className="absolute inset-0 bg-[#8B0000]/30 blur-lg rounded-full" />
                 <img 
-                  src="/images/agnira-logo-official.jpg" 
+                  src="/images/agnira-logo.png" 
                   alt="Agnira MUN" 
-                  className="relative w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300 brightness-125 contrast-110 saturate-110"
+                  className="relative w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300 opacity-90"
                   style={{ 
-                    mixBlendMode: 'screen',
-                    filter: 'drop-shadow(0 0 15px rgba(255, 215, 0, 0.4))'
+                    filter: 'drop-shadow(0 0 15px rgba(255, 215, 0, 0.5)) drop-shadow(0 0 8px rgba(139, 0, 0, 0.3))'
                   }}
                 />
               </div>

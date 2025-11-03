@@ -20,12 +20,11 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-radial from-[#FFD700]/30 via-[#8B0000]/20 to-transparent blur-3xl scale-150" />
                 <div className="absolute inset-0 bg-[#8B0000]/40 blur-2xl" />
                 <img 
-                  src="/images/agnira-logo-official.jpg" 
+                  src="/images/agnira-logo.png" 
                   alt="Agnira MUN Official Logo" 
-                  className="relative w-40 h-40 sm:w-48 sm:h-48 object-contain brightness-125 contrast-110 saturate-110"
+                  className="relative w-40 h-40 sm:w-48 sm:h-48 object-contain opacity-90"
                   style={{ 
-                    mixBlendMode: 'screen',
-                    filter: 'drop-shadow(0 0 40px rgba(255, 215, 0, 0.5))'
+                    filter: 'drop-shadow(0 0 40px rgba(255, 215, 0, 0.6)) drop-shadow(0 0 20px rgba(139, 0, 0, 0.4))'
                   }}
                 />
               </div>

@@ -12,7 +12,7 @@ const Hero = () => {
               <img 
                 src="/images/agnira-logo.png" 
                 alt="Agnira MUN Official Logo" 
-                className="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 object-contain"
+                className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 object-contain"
               />
             </div>
             <div className="text-sm font-semibold tracking-widest text-[#FFD700]/80 mb-4 uppercase" style={{ textShadow: '0 0 20px rgba(255, 215, 0, 0.3)' }}>

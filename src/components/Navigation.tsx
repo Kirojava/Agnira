@@ -54,7 +54,7 @@ const Navigation = ({ activeSection }: NavigationProps) => {
               <img 
                 src="/images/agnira-logo.png" 
                 alt="Agnira MUN" 
-                className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-300"
+                className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300"
               />
               <div>
                 <div className="text-2xl font-bold text-gradient">AGNIRA MUN</div>
